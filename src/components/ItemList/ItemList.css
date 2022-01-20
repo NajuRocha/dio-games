@@ -1,0 +1,9 @@
+h2 {
+  text-align: center;
+}
+
+.item-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}

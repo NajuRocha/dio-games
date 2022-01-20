@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from "react";
 import "./ItemCount.css";
-import DarkSouls from "../../assets/juegos/DarkSouls.PNG";
 
 export const ItemCount = ({ stock, initial }) => {
   const [count, setCount] = useState(initial);
@@ -23,7 +22,6 @@ export const ItemCount = ({ stock, initial }) => {
 
   return (
     <div className="box-counter">
-      <img className="img-juego" src={DarkSouls} alt="darksouls" />
       <div className="counter">
         <button className="boton-count" onClick={() => restar()}>
           -

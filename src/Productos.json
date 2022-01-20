@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Dark Souls 3",
+    "price": 1499,
+    "img": "/img/DarkSouls.PNG",
+    "stock": 63
+  },
+  {
+    "id": 2,
+    "name": "Street of Rage 4",
+    "price": 999,
+    "img": "/img/sor4.PNG",
+    "stock": 40
+  },
+  {
+    "id": 3,
+    "name": "Elden Ring",
+    "price": 3999,
+    "img": "/img/eldenring.PNG",
+    "stock": 11
+  },
+  {
+    "id": 4,
+    "name": "God of War",
+    "price": 4299,
+    "img": "/img/gow4.PNG",
+    "stock": 36
+  },
+  {
+    "id": 5,
+    "name": "Resident evil 8",
+    "price": 2999,
+    "img": "/img/re8.PNG",
+    "stock": 39
+  }
+]
