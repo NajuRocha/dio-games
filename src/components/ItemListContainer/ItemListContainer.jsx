@@ -1,4 +1,3 @@
-import { ItemCount } from "../ItemCount/ItemCount";
 import Productos from "../../Productos.json";
 import { ItemList } from "../ItemList/ItemList";
 import { useEffect, useState } from "react";
@@ -29,7 +28,6 @@ export const ItemListContainer = ({ greeting }) => {
 
       {/* Aca va el ItemList, que asigna todos los Item */}
 
-      <ItemCount stock={5} initial={1} />
       <ItemList items={productos} />
     </div>
   );

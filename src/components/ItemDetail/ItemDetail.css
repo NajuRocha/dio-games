@@ -1,0 +1,31 @@
+.detalles-container {
+  display: flex;
+  justify-content: center;
+  margin: 5rem;
+  padding: 0 10rem;
+  align-items: center;
+}
+
+.img {
+  width: 40vw;
+  height: 70vh;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.315);
+}
+
+.detalles-informacion {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.detalles-informacion p {
+  margin: 0 5rem;
+  font-size: 1.2rem;
+}
+.detalles-stock {
+  padding-top: 1rem;
+}

@@ -4,7 +4,9 @@
     "name": "Dark Souls 3",
     "price": 1499,
     "img": "/img/DarkSouls.PNG",
-    "stock": 63
+    "img2": "/img/DarkSouls-2.PNG",
+    "stock": 6,
+    "description": "Dark Souls 3 es el final de la saga y presenta un mundo, el Reino de Lothric, al borde del Apocalipsis por culpa de *la maldición de los no muertos*, y la razón por la que el mundo aún no se ha sumido en la oscuridad totalmente es el sacrificio que muchos héroes e incluso dioses hicieron al reavivar la llama original, la cual se encarga de mantener la *Era del fuego*, dejando que esta consumiera sus respectivas almas y cuerpos."
   },
   {
     "id": 2,
