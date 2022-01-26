@@ -12,7 +12,9 @@ export const ItemDetail = ({ producto }) => {
           <h2>Detalles del producto:</h2>
           <h3>{producto.name}</h3>
           <p>{producto.description}</p>
+
           <p className="detalles-stock">Stock: {producto.stock}</p>
+          <h4>Valor: ${producto.price}</h4>
           <ItemCount stock={producto.stock} initial={1} />
         </div>
       </div>
