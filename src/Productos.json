@@ -9,7 +9,7 @@
     "description": "Dark Souls 3 es el final de la saga y presenta un mundo, el Reino de Lothric, al borde del Apocalipsis por culpa de *la maldición de los no muertos*, y la razón por la que el mundo aún no se ha sumido en la oscuridad totalmente es el sacrificio que muchos héroes e incluso dioses hicieron al reavivar la llama original, la cual se encarga de mantener la *Era del fuego*, dejando que esta consumiera sus respectivas almas y cuerpos."
   },
   {
-    "id": "2",
+    "id": 2,
     "name": "Street of Rage 4",
     "category": "Accion",
     "price": 999,
@@ -18,7 +18,7 @@
     "description": "Dark Souls 3 es el final de la saga y presenta un mundo, el Reino de Lothric, al borde del Apocalipsis por culpa de *la maldición de los no muertos*, y la razón por la que el mundo aún no se ha sumido en la oscuridad totalmente es el sacrificio que muchos héroes e incluso dioses hicieron al reavivar la llama original, la cual se encarga de mantener la *Era del fuego*, dejando que esta consumiera sus respectivas almas y cuerpos."
   },
   {
-    "id": "3",
+    "id": 3,
     "name": "Elden Ring",
     "category": "Mundo-abierto",
     "price": 3999,
@@ -27,7 +27,7 @@
     "description": "Dark Souls 3 es el final de la saga y presenta un mundo, el Reino de Lothric, al borde del Apocalipsis por culpa de *la maldición de los no muertos*, y la razón por la que el mundo aún no se ha sumido en la oscuridad totalmente es el sacrificio que muchos héroes e incluso dioses hicieron al reavivar la llama original, la cual se encarga de mantener la *Era del fuego*, dejando que esta consumiera sus respectivas almas y cuerpos."
   },
   {
-    "id": "4",
+    "id": 4,
     "name": "God of War",
     "category": "Accion",
     "price": 4299,
@@ -36,7 +36,7 @@
     "description": "Dark Souls 3 es el final de la saga y presenta un mundo, el Reino de Lothric, al borde del Apocalipsis por culpa de *la maldición de los no muertos*, y la razón por la que el mundo aún no se ha sumido en la oscuridad totalmente es el sacrificio que muchos héroes e incluso dioses hicieron al reavivar la llama original, la cual se encarga de mantener la *Era del fuego*, dejando que esta consumiera sus respectivas almas y cuerpos."
   },
   {
-    "id": "5",
+    "id": 5,
     "name": "Resident evil 8",
     "category": "Terror",
     "price": 2999,
