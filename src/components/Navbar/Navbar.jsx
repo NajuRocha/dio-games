@@ -1,6 +1,7 @@
 import "materialize-css/dist/css/materialize.css";
 import "materialize-css/dist/js/materialize.min.js";
-import { Navbar, Icon, NavItem } from "react-materialize";
+import { Navbar, Icon } from "react-materialize";
+import { Link } from "react-router-dom";
 import { Cartwidget } from "./CartWidget";
 import "./Navbar.css";
 
@@ -9,9 +10,9 @@ export const NavBar = (props) => {
     <Navbar
       alignLinks="right"
       brand={
-        <a className="brand-logo" href="./">
+        <Link className="brand-logo" to={`/`}>
           DIO Games
-        </a>
+        </Link>
       }
       id="mobile-nav"
       menuIcon={<Icon>menu</Icon>}
@@ -27,9 +28,13 @@ export const NavBar = (props) => {
         preventScrolling: true,
       }}
     >
-      <NavItem href="">JUEGOS</NavItem>
-      <NavItem href="components.html">PLATAFORMAS</NavItem>
+      <Link to={"/categoria/Accion"}>Accion</Link>
+      <Link to={"/categoria/Mundo-abierto"}>Mundo abierto</Link>
+      <Link to={"/categoria/Terror"}>Terror</Link>
       <Cartwidget />
     </Navbar>
   );
 };
+
+//borre los NavItem de materialize para solucionar el error por consola de
+//"react-dom.development.js:67 Warning: validateDOMNesting(...): <a> cannot appear as a descendant of <a>""

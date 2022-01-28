@@ -1,9 +1,12 @@
 import Productos from "../../Productos.json";
 import { ItemList } from "../ItemList/ItemList";
 import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
 export const ItemListContainer = ({ greeting }) => {
   const [productos, setProductos] = useState([]);
+
+  const { categoriaId } = useParams();
 
   const arrayProductos = (data) =>
     new Promise((resolve, reject) => {
@@ -18,9 +21,13 @@ export const ItemListContainer = ({ greeting }) => {
 
   useEffect(() => {
     arrayProductos(Productos)
-      .then((result) => setProductos(result))
+      .then((result) =>
+        categoriaId
+          ? setProductos(result.filter((c) => c.category === categoriaId))
+          : setProductos(Productos)
+      )
       .catch((err) => console.log(err));
-  }, []);
+  }, [categoriaId]);
 
   return (
     <div>
