@@ -12,7 +12,10 @@ export const ItemListContainer = ({ greeting }) => {
     new Promise((resolve, reject) => {
       setTimeout(() => {
         if (data) {
-          resolve(data);
+          let productoEncontrado = Productos.filter(
+            (c) => c.category === categoriaId
+          );
+          resolve(productoEncontrado);
         } else {
           reject("No se ha encontrado el producto.");
         }
@@ -20,11 +23,9 @@ export const ItemListContainer = ({ greeting }) => {
     });
 
   useEffect(() => {
-    arrayProductos(Productos)
+    arrayProductos
       .then((result) =>
-        categoriaId
-          ? setProductos(result.filter((c) => c.category === categoriaId))
-          : setProductos(Productos)
+        categoriaId ? setProductos(result) : setProductos(Productos)
       )
       .catch((err) => console.log(err));
   }, [categoriaId]);

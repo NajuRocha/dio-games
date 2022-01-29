@@ -2,12 +2,8 @@ import React from "react";
 import { useState } from "react";
 import "./ItemCount.css";
 
-export const ItemCount = ({ stock, initial }) => {
+export const ItemCount = ({ stock, initial, onAdd }) => {
   const [count, setCount] = useState(initial);
-
-  function onAdd() {
-    alert(`Estas agregando ${count} items al carrito`);
-  }
 
   function sumar() {
     if (count < stock) {
@@ -33,7 +29,7 @@ export const ItemCount = ({ stock, initial }) => {
           +
         </button>
       </div>
-      <button className="boton-agregar-carrito" onClick={() => onAdd()}>
+      <button className="boton-agregar-carrito" onClick={() => onAdd(count)}>
         Agregar al carrito
       </button>
     </div>
