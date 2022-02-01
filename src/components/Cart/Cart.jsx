@@ -1,5 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
+import { cartContext } from "../Context/CartProvider";
 
-export const Cart = () => {
-  return <h1>Este es el carrito</h1>;
+const Cart = () => {
+  const { cart } = useContext(cartContext);
+  console.log(cart);
+
+  return <div>Cart</div>;
 };
+
+export default Cart;
