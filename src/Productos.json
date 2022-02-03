@@ -15,7 +15,7 @@
     "price": 999,
     "img": "/img/sor4.PNG",
     "stock": 40,
-    "description": "Dark Souls 3 es el final de la saga y presenta un mundo, el Reino de Lothric, al borde del Apocalipsis por culpa de *la maldición de los no muertos*, y la razón por la que el mundo aún no se ha sumido en la oscuridad totalmente es el sacrificio que muchos héroes e incluso dioses hicieron al reavivar la llama original, la cual se encarga de mantener la *Era del fuego*, dejando que esta consumiera sus respectivas almas y cuerpos."
+    "description": "Manteniendo el mismo estilo de juego de anteriores entregas de la serie Streets of Rage, Streets of Rage 4 es un yo contra el barrio de scroll lateral en el que hasta cuatro jugadores de forma local o dos de forma online luchan contra hordas de enemigos ayudados por las armas e ítems disponibles. Además de los ataques estándar, cada personaje posee varios ataques especiales que pueden ser ejecutados perdiendo una pequeña parte de la barra de salud cada vez..."
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "price": 3999,
     "img": "/img/eldenring.PNG",
     "stock": 11,
-    "description": "Dark Souls 3 es el final de la saga y presenta un mundo, el Reino de Lothric, al borde del Apocalipsis por culpa de *la maldición de los no muertos*, y la razón por la que el mundo aún no se ha sumido en la oscuridad totalmente es el sacrificio que muchos héroes e incluso dioses hicieron al reavivar la llama original, la cual se encarga de mantener la *Era del fuego*, dejando que esta consumiera sus respectivas almas y cuerpos."
+    "description": "Elden Ring tiene lugar en el reino de Lands Between, en algún momento después de la destrucción del Elden Ring titular y la dispersión de sus fragmentos, las Grandes Runas. Una vez agraciado por el Anillo y el Erdtree que simboliza su presencia, el reino ahora está gobernado por los descendientes semidioses de la Reina Marika la Eterna, cada uno de los cuales posee un fragmento del Anillo que los corrompe y contamina con poder. "
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "price": 4299,
     "img": "/img/gow4.PNG",
     "stock": 36,
-    "description": "Dark Souls 3 es el final de la saga y presenta un mundo, el Reino de Lothric, al borde del Apocalipsis por culpa de *la maldición de los no muertos*, y la razón por la que el mundo aún no se ha sumido en la oscuridad totalmente es el sacrificio que muchos héroes e incluso dioses hicieron al reavivar la llama original, la cual se encarga de mantener la *Era del fuego*, dejando que esta consumiera sus respectivas almas y cuerpos."
+    "description": "Kratos, que ha dejado atrás el mundo de los dioses, deberá adaptarse a tierras que no le son familiares, afrontar peligros inesperados y aprovechar una segunda oportunidad de ejercer como padre. Junto a su hijo Atreus se aventurará en lo más profundo e inclemente de las tierras de Midgard y luchará por culminar una búsqueda profundamente personal."
   },
   {
     "id": 5,
@@ -42,6 +42,6 @@
     "price": 2999,
     "img": "/img/re8.PNG",
     "stock": 39,
-    "description": "Dark Souls 3 es el final de la saga y presenta un mundo, el Reino de Lothric, al borde del Apocalipsis por culpa de *la maldición de los no muertos*, y la razón por la que el mundo aún no se ha sumido en la oscuridad totalmente es el sacrificio que muchos héroes e incluso dioses hicieron al reavivar la llama original, la cual se encarga de mantener la *Era del fuego*, dejando que esta consumiera sus respectivas almas y cuerpos."
+    "description": "La historia se desarrolla en una región montañosa aislada alrededor de un pueblo y un castillo medieval en Europa del Este. Ethan y Mia Winters siguieron juntos después de los eventos de Resident Evil 7: Biohazard e intentaron seguir con sus vidas tres años después del incidente en Dulvey. Durante los eventos del juego, la hija de los Winters, Rosemary, es secuestrada por unos individuos, lo que obliga a Ethan a viajar al pueblo."
   }
 ]

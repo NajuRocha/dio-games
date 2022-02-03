@@ -2,6 +2,7 @@ import Productos from "../../Productos.json";
 import { ItemList } from "../ItemList/ItemList";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import "./ItemListContainer.css";
 
 export const ItemListContainer = ({ greeting }) => {
   const [productos, setProductos] = useState([]);
@@ -34,7 +35,11 @@ export const ItemListContainer = ({ greeting }) => {
       <h1 style={{ textAlign: "center" }}>{greeting}</h1>
 
       {/* Aca va el ItemList, que asigna todos los Item */}
-
+      <p>
+        Las mejores ofertas, nuevos juegos, títulos AAA y equipo de juego de
+        alta calidad. Compre los videojuegos más vendidos a precios más
+        económicos.
+      </p>
       <ItemList items={productos} />
     </div>
   );

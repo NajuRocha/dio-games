@@ -1,0 +1,28 @@
+.footer {
+  display: flex;
+  bottom: 0;
+  width: 100%;
+  padding: 0 30 px;
+
+  position: relative;
+  overflow: hidden;
+  clear: both;
+  z-index: 1;
+}
+
+.footer1 {
+  justify-content: center;
+  text-align: end;
+  background-color: #0c0c0c;
+  position: relative;
+  width: 30rem;
+}
+.footer1 p {
+  margin: 2rem;
+}
+
+.footer2 {
+  background-color: #fe4a47c4;
+  position: relative;
+  width: 100%;
+}

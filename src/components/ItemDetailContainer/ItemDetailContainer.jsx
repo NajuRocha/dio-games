@@ -26,22 +26,12 @@ export const ItemDetailContainer = () => {
       .catch((err) => console.log(err));
   }, [idProducto]);
 
-  console.log(
-    "type del param",
-    typeof itemId,
-    "type de idProducto",
-    typeof idProducto
-  ); // para ver el tipo de dato ya que el find no encontraba el producto
-  //use find porque si usaba filter despues tenia que mapear para que renderice.
-  //no sabia por que no se veia el prodcto y era eso. El find lo renderiza directamente porque no devuelve un array
-  console.log(producto, "el proiducto de itemDetailContainer");
-
   return (
     <div>
       {producto ? (
         <ItemDetail producto={producto} />
       ) : (
-        <p style={{ color: "white" }}>Cargando detalles</p>
+        <h2 style={{ color: "white" }}>Cargando detalles...</h2>
       )}
     </div>
   );

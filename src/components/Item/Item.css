@@ -1,8 +1,9 @@
 p {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  margin: 0;
 }
 hr {
-  width: 15rem;
+  width: 80%;
 }
 
 .item-card {
@@ -11,8 +12,8 @@ hr {
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  width: 25rem;
-  height: 40rem;
+  width: 20rem;
+  height: 30rem;
   align-items: center;
   justify-content: center;
   margin: 1rem;
@@ -20,8 +21,8 @@ hr {
 
 .item-img {
   padding-top: 10px;
-  width: 20rem;
-  height: 18rem;
+  width: 15rem;
+  height: 17rem;
   border-radius: 1rem;
 }
 

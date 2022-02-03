@@ -1,13 +1,14 @@
 nav ul a {
   color: rgb(60, 212, 55);
-  margin-right: 5rem;
-  font-size: 1.5rem;
+  margin-right: 2rem;
+  font-size: 1.8rem;
 }
 nav .nav-wrapper {
   background-color: black;
 }
 
 nav .brand-logo {
+  font-size: 3rem;
   color: rgb(60, 212, 55);
   margin-left: 5rem;
 }
