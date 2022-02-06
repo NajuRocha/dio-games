@@ -31,7 +31,9 @@ export const NavBar = (props) => {
       <Link to={"/categoria/Accion"}>Accion</Link>
       <Link to={"/categoria/Mundo-abierto"}>Mundo abierto</Link>
       <Link to={"/categoria/Terror"}>Terror</Link>
-      <Cartwidget />
+      <Link to={"/Cart"}>
+        <Cartwidget />
+      </Link>
     </Navbar>
   );
 };

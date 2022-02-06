@@ -1,3 +1,39 @@
+/*--------------botones----------------*/
+
+.boton-vaciar-carrito {
+  background-color: rgb(212, 55, 55);
+  color: rgb(0, 0, 0);
+  font-family: "Bebas Neue";
+  font-size: 1.2rem;
+  border: solid 1px;
+  padding: 0.5rem;
+  width: 15rem;
+}
+
+/* ---------------CARRITO---------------------- */
+
 .cart-container {
-  height: 90vh;
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 90vw;
+  height: 100vh;
+}
+
+.cart-card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.boton-finalizar-compra {
+  background-color: rgb(60, 212, 55);
+  color: rgb(0, 0, 0);
+  font-family: "Bebas Neue";
+  font-size: 1.2rem;
+  border: solid 1px;
+  padding: 0.5rem;
+  width: 15rem;
 }

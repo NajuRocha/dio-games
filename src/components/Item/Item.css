@@ -20,9 +20,9 @@ hr {
 }
 
 .item-img {
-  padding-top: 10px;
+  margin-top: 10px;
   width: 15rem;
-  height: 17rem;
+  height: 15rem;
   border-radius: 1rem;
 }
 
@@ -31,10 +31,10 @@ hr {
 }
 
 .item-btn {
+  font-family: "Bebas Neue";
   background-color: rgb(60, 212, 55);
   color: rgb(0, 0, 0);
   margin: 1rem;
-  font-weight: bold;
   font-size: 1.2rem;
   border: none;
   border-radius: 5px;

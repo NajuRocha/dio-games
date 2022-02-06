@@ -17,7 +17,7 @@ export const ItemListContainer = ({ greeting }) => {
         } else {
           reject("No se ha encontrado el producto.");
         }
-      }, 2000);
+      }, 100);
     });
 
   useEffect(() => {

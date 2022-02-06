@@ -32,8 +32,17 @@ export const ItemDetail = ({ producto }) => {
             <ItemCount onAdd={onAdd} stock={producto.stock} initial={1} />
           ) : (
             <>
-              <button className="boton-agregar-carrito">{`Elegiste ${cantidad} producto/s`}</button>
-              <Link to={"/Cart"}>Ir al carrito</Link>
+              <div>
+                <p
+                  style={{ marginBottom: "0.5rem" }}
+                >{`Elegiste ${cantidad} producto/s`}</p>
+                <Link className="boton-agregar-carrito" to={"/Cart"}>
+                  Ir al carrito
+                </Link>
+                <Link className="boton-agregar-carrito" to={"/"}>
+                  Seguir comprando
+                </Link>
+              </div>
             </>
           )}
         </div>
