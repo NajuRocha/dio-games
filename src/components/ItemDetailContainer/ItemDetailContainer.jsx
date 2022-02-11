@@ -3,7 +3,7 @@ import { ItemDetail } from "../ItemDetail/ItemDetail";
 // import Productos from "../../Productos.json";
 import { useParams } from "react-router-dom";
 import { getFirestore } from "../../firebase/firebase";
-import { doc, getDoc } from "@firebase/firestore";
+import { doc } from "@firebase/firestore";
 
 export const ItemDetailContainer = () => {
   const [producto, setProducto] = useState([]);
@@ -28,7 +28,7 @@ export const ItemDetailContainer = () => {
       .catch((err) => {
         console.log(err);
       });
-  }, [itemId]);
+  });
 
   // CODIGO VIEJO
 
