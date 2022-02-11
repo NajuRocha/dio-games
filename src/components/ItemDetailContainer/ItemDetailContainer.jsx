@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { ItemDetail } from "../ItemDetail/ItemDetail";
-// import Productos from "../../Productos.json";
 import { useParams } from "react-router-dom";
 import { getFirestore } from "../../firebase/firebase";
-import { doc } from "@firebase/firestore";
 
 export const ItemDetailContainer = () => {
   const [producto, setProducto] = useState([]);
@@ -13,22 +11,21 @@ export const ItemDetailContainer = () => {
     const db = getFirestore();
 
     const productsCollection = db.collection("productos");
-    const item = doc(db, "productos", itemId);
+    const item = productsCollection.doc(itemId);
 
-    const miProducto = productsCollection.doc(producto.id);
-
-    miProducto
-      .get(item)
+    item
+      .get()
       .then((snapshot) => {
         if (!snapshot.exists) {
-          setProducto(snapshot.data());
+          console.log("No hay ID");
         }
+        setProducto({ id: itemId, ...snapshot.data() });
       })
 
       .catch((err) => {
         console.log(err);
       });
-  });
+  }, [itemId]);
 
   // CODIGO VIEJO
 
