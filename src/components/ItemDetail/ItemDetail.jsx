@@ -29,7 +29,7 @@ export const ItemDetail = ({ producto }) => {
           <p className="detalles-stock">Stock: {producto.stock}</p>
           <h4>Valor: ${producto.price}</h4>
           {mostrarCount ? (
-            <ItemCount onAdd={onAdd} stock={producto.stock} initial={1} />
+            <ItemCount onAdd={onAdd} stock={producto.stock} initial={0} />
           ) : (
             <>
               <div>

@@ -48,19 +48,20 @@ export const Form = () => {
 
     Swal.fire("Gracias por comprar en DIO GAMES");
 
-    // cart.forEach((item) => {
-    //   const docRef = db.collection("productos", item.id);
+    cart.forEach((item) => {
+      const docRef = db.collection("productos").doc(item.id);
+      console.log(item, "referencia");
 
-    //   docRef
-    //     .update({ stock: item.stock - item.cantidad })
+      docRef
+        .update({ stock: item.stock - item.quantity })
 
-    //     .then(() => {
-    //       console.log("se cambió el stock de los productos");
-    //     })
-    //     .catch((err) => {
-    //       console.log(err);
-    //     });
-    // });
+        .then(() => {
+          console.log("se cambió el stock de los productos");
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    });
   }
 
   return (
