@@ -11,7 +11,7 @@ const Cart = () => {
   console.log(cart);
 
   function finalizarCompra() {
-    Swal.fire("¿Estas seguro que quieres terminar la compra?");
+    Swal.fire("Por favor, complete los datos para finalizar la compra.");
   }
 
   return (
@@ -39,12 +39,14 @@ const Cart = () => {
           {cart.length ? (
             <>
               <h2>Total a pagar: ${totalAPagar}</h2>
-              <button
-                className="boton-finalizar-compra"
-                onClick={finalizarCompra}
-              >
-                Terminar compra
-              </button>
+              <Link to={"/Form"}>
+                <button
+                  className="boton-finalizar-compra"
+                  onClick={finalizarCompra}
+                >
+                  Terminar compra
+                </button>
+              </Link>
               <button className="boton-vaciar-carrito" onClick={clear}>
                 Vaciar carrito
               </button>
