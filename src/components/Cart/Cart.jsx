@@ -20,14 +20,12 @@ const Cart = () => {
         <div className="cart-card">
           {cart.length ? (
             cart.map((inCart) => (
-              <>
-                <CartItem
-                  key={inCart.id}
-                  producto={inCart}
-                  removeItem={() => removeItem(inCart)}
-                  removeQuantity={() => removeQuantity(inCart)}
-                />
-              </>
+              <CartItem
+                key={inCart.id}
+                producto={inCart}
+                removeItem={() => removeItem(inCart)}
+                removeQuantity={() => removeQuantity(inCart)}
+              />
             ))
           ) : (
             <>

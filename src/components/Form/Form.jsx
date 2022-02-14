@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
 export const Form = () => {
-  const { cart, totalAPagar, clear } = useContext(cartContext);
+  const { cart, totalAPagar } = useContext(cartContext);
 
   const [orderId, setOrderId] = useState("");
 
@@ -43,8 +43,6 @@ export const Form = () => {
       .catch((err) => {
         console.log(err);
       });
-
-    clear();
 
     Swal.fire("Gracias por comprar en DIO GAMES");
 
