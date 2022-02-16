@@ -2,11 +2,11 @@ import React, { useRef, useState, useContext } from "react";
 import firebase from "firebase";
 import { getFirestore } from "../../firebase/firebase";
 import { cartContext } from "../../Context/CartProvider";
-import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
+import "./Form.css";
 
 export const Form = () => {
-  const { cart, totalAPagar } = useContext(cartContext);
+  const { cart, totalAPagar, clear } = useContext(cartContext);
 
   const [orderId, setOrderId] = useState("");
 
@@ -16,7 +16,9 @@ export const Form = () => {
   const mobileRef = useRef();
   const cardRef = useRef();
 
-  function handleClick() {
+  function handleClick(event) {
+    event.preventDefault();
+
     const db = getFirestore();
 
     const orders = db.collection("orders");
@@ -60,6 +62,8 @@ export const Form = () => {
           console.log(err);
         });
     });
+
+    clear();
   }
 
   return (
@@ -67,8 +71,13 @@ export const Form = () => {
       {orderId && <h1>ID de compra: {orderId}</h1>}
 
       <div>
-        <form>
+        <form className="formulario" onSubmit={handleClick}>
           <input
+            style={{
+              width: "60%",
+              borderRadius: "5px",
+              padding: "5px",
+            }}
             type="text"
             name="name"
             ref={nameRef}
@@ -77,6 +86,11 @@ export const Form = () => {
           />
           <br />
           <input
+            style={{
+              width: "60%",
+              borderRadius: "5px",
+              padding: "5px",
+            }}
             type="text"
             name="email"
             ref={emailRef}
@@ -84,8 +98,23 @@ export const Form = () => {
             required
           />
           <br />
-          <input type="text" name="dni" ref={dniRef} placeholder="Documento" />
           <input
+            style={{
+              width: "60%",
+              borderRadius: "5px",
+              padding: "5px",
+            }}
+            type="text"
+            name="dni"
+            ref={dniRef}
+            placeholder="Documento"
+          />
+          <input
+            style={{
+              width: "60%",
+              borderRadius: "5px",
+              padding: "5px",
+            }}
             type="text"
             name="mobile"
             ref={mobileRef}
@@ -94,6 +123,11 @@ export const Form = () => {
           />
           <br />
           <input
+            style={{
+              width: "60%",
+              borderRadius: "5px",
+              padding: "5px",
+            }}
             type="text"
             name="credit"
             ref={cardRef}
@@ -101,11 +135,7 @@ export const Form = () => {
             required
           />
           <br />
-          <Link to={"/"}>
-            <button type="submit" onClick={handleClick}>
-              Finalizar
-            </button>
-          </Link>
+          <button type="submit">Finalizar</button>
         </form>
       </div>
     </>
