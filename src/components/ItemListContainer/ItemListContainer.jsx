@@ -9,8 +9,12 @@ export const ItemListContainer = ({ greeting }) => {
 
   const [productos, setProductos] = useState([]);
 
+  
+
+
   useEffect(() => {
     const db = getFirestore();
+
 
     if (categoriaId === undefined) {
       const productCollection = db.collection("productos");
@@ -33,13 +37,18 @@ export const ItemListContainer = ({ greeting }) => {
         );
       });
     }
+    
+    //ordenar prodcutos en base a su nombre
+    const ordenarProductos = db.collection("productos");
+    ordenarProductos.orderBy("name")
+    
   }, [categoriaId]);
 
   return (
     <div>
       <h1 style={{ textAlign: "center" }}>{greeting}</h1>
 
-      <p>
+      <p style={{marginBottom: "4rem"}}>
         Las mejores ofertas, nuevos juegos, títulos AAA y equipo de juego de
         alta calidad. Compre los videojuegos más vendidos a precios más
         económicos.
