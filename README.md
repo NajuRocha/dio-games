@@ -32,6 +32,20 @@ producto e impacta en todos los indicadores antes mencionados.
 - `CSS 3` ✔️
 - `Sweet Alert 2` ✔️
 - `Firebase` ✔️
+
+## FUTUROS CAMBIOS / AGREGADOS
+
+> Login con Auth de firebase
+
+> Carrito alojado en LocalStorage
+
+> Trabajar con stock en tiempo real
+
+> Hacer responsive la app
+
+> Levantar el proyecto en netlify
+
+> Traducción de README
 ## 🔗 AUTOR
 
 **ROCHA, Nahuel Nicolás**
