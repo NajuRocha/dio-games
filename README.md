@@ -1,70 +1,39 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# DIO GAMES - ReactJs
 
-## Available Scripts
+DIO GAMES es una tienda online desarrollada íntegramente en ReactJs y creada como proyecto final del curso brindado por CoderHouse.
 
-In the project directory, you can run:
 
-### `npm start`
+![App Screenshot](https://i.imgur.com/wL8KILF.png)
+## FUNCIONALIDADES
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+El carrito cuenta con los botones necesarios para modificar la compra:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Con **`restar cantidad`** se elimina 1 unidad del producto tanto en el item cart como en el widget
+y el precio total, mientras que con **`eliminar juego`** se eliminan todas las unidades de dicho
+producto e impacta en todos los indicadores antes mencionados.
 
-### `npm test`
+![app loca](https://media.giphy.com/media/vAvlekoTn02U7PZe8C/giphy.gif)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## CARACTERÍSTICAS GENERALES
 
-### `npm run build`
+- Se consume una base de datos alojada en Firebase y conformada con información.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- El contexto recibe y envía información para la gestión del carrito, ya sea en su cantidad o en el precio a través de estados individuales.
+- Los productos se encuentran agrupados en un catálogo general y luego divididos en categorías.
+- La comunicación con el usuario se lleva a cabo a través de mensajes estilados con Sweet Alert 2.
+- Se utiliza un componente counter para gestionar las cantidades de productos que se agregarán al carro.
+- El stock de productos es chequeado previo a la compra y por el momento no se actualiza en tiempo real.
+- Al finalizar la compra se genera un N° de orden el cual carga en la base de datos la información de la compra y notifica al cliente dentro del sitio.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## HERRAMIENTAS
+- `React Js` ✔️
+- `React Router DOM` ✔️
+- `CSS 3` ✔️
+- `Sweet Alert 2` ✔️
+- `Firebase` ✔️
+## 🔗 AUTOR
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**ROCHA, Nahuel Nicolás**
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nahuel-nicol%C3%A1s-rocha-0922951b3/)
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
