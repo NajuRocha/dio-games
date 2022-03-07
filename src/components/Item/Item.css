@@ -26,6 +26,10 @@ hr {
   border-radius: 1rem;
 }
 
+.item-name {
+  font-size: 2.5em;
+}
+
 .item-info {
   text-align: center;
 }
