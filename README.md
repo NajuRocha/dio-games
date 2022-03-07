@@ -7,7 +7,7 @@ DIO GAMES es una tienda online desarrollada íntegramente en ReactJs y creada co
 ## 🔗 URL
 
 Podes visitar la app desde el siguiente link 🔍
-diogames.netlify.app
+[https://diogames.netlify.app]
 
 ## FUNCIONALIDADES
 
