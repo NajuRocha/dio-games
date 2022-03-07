@@ -31,7 +31,7 @@ export const Form = () => {
         mobile: mobileRef.current.value,
         card: cardRef.current.value,
       },
-      items: cart,
+      items: cart.length,
       date: firebase.firestore.Timestamp.fromDate(new Date()),
       total: totalAPagar,
     };
