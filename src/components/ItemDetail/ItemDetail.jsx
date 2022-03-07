@@ -14,8 +14,15 @@ export const ItemDetail = ({ producto }) => {
     setCantidad(cantidad);
     addItem(producto, cantidad);
     setMostrarCount(false);
-    console.log(cart, "holaasdasdasdas");
   }
+
+  const isInCart = cart.find((p) => p.id === producto.id);
+  const update = () => {
+    if (isInCart) {
+      const updateStock = isInCart.stock - isInCart.quantity;
+      return updateStock;
+    }
+  };
 
   return (
     <>
@@ -26,10 +33,21 @@ export const ItemDetail = ({ producto }) => {
           <h3>{producto.name}</h3>
           <p>{producto.description}</p>
 
-          <p className="detalles-stock">Stock: {producto.stock}</p>
+          {isInCart ? (
+            <p className="detalles-stock">Stock: {update()}</p>
+          ) : (
+            <p className="detalles-stock">Stock: {producto.stock}</p>
+          )}
+
           <h4>Valor: ${producto.price}</h4>
+
           {mostrarCount ? (
-            <ItemCount onAdd={onAdd} stock={producto.stock} initial={0} />
+            <ItemCount
+              onAdd={onAdd}
+              stock={producto.stock}
+              initial={1}
+              updateStock={update()}
+            />
           ) : (
             <>
               <div>
