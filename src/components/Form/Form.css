@@ -8,3 +8,16 @@ h1 {
   align-items: center;
   margin: 7rem 0 12rem 0;
 }
+
+.botonFinalizar {
+  font-family: "Bebas Neue";
+  width: 8rem;
+  background-color: rgb(60, 212, 55);
+  color: rgb(0, 0, 0);
+  margin: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+}

@@ -16,8 +16,8 @@ export const Form = () => {
   const mobileRef = useRef();
   const cardRef = useRef();
 
-  function handleClick(event) {
-    event.preventDefault();
+  const handleClick = (e) => {
+    e.preventDefault();
 
     const db = getFirestore();
 
@@ -64,20 +64,23 @@ export const Form = () => {
     });
 
     clear();
-  }
+  };
+
+  let inputStyle = {
+    color: "white",
+    width: "60%",
+    borderRadius: "5px",
+    padding: "5px",
+  };
 
   return (
     <>
       {orderId && <h1>ID de compra: {orderId}</h1>}
 
       <div>
-        <form className="formulario" onSubmit={handleClick}>
+        <form id="my-form" className="formulario" onSubmit={handleClick}>
           <input
-            style={{
-              width: "60%",
-              borderRadius: "5px",
-              padding: "5px",
-            }}
+            style={inputStyle}
             type="text"
             name="name"
             ref={nameRef}
@@ -86,11 +89,7 @@ export const Form = () => {
           />
           <br />
           <input
-            style={{
-              width: "60%",
-              borderRadius: "5px",
-              padding: "5px",
-            }}
+            style={inputStyle}
             type="text"
             name="email"
             ref={emailRef}
@@ -99,22 +98,15 @@ export const Form = () => {
           />
           <br />
           <input
-            style={{
-              width: "60%",
-              borderRadius: "5px",
-              padding: "5px",
-            }}
+            style={inputStyle}
             type="text"
             name="dni"
             ref={dniRef}
             placeholder="Documento"
           />
+          <br />
           <input
-            style={{
-              width: "60%",
-              borderRadius: "5px",
-              padding: "5px",
-            }}
+            style={inputStyle}
             type="text"
             name="mobile"
             ref={mobileRef}
@@ -123,11 +115,7 @@ export const Form = () => {
           />
           <br />
           <input
-            style={{
-              width: "60%",
-              borderRadius: "5px",
-              padding: "5px",
-            }}
+            style={inputStyle}
             type="text"
             name="credit"
             ref={cardRef}
@@ -135,7 +123,13 @@ export const Form = () => {
             required
           />
           <br />
-          <button type="submit">Finalizar</button>
+          <button
+            className="botonFinalizar"
+            type="submit"
+            disabled={cart.length === 0}
+          >
+            Finalizar
+          </button>
         </form>
       </div>
     </>
