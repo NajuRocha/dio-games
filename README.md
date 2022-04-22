@@ -55,4 +55,4 @@ producto e impacta en todos los indicadores antes mencionados.
 ## 🔗 AUTOR
 
 **ROCHA, Nahuel Nicolás**
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nahuel-nicol%C3%A1s-rocha-0922951b3/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nahuel-rocha-934b25234/)
